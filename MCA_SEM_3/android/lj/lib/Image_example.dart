@@ -44,7 +44,6 @@ class ImageExample extends StatelessWidget {
           ),
         ),
       ),
-
     );
   }
 }

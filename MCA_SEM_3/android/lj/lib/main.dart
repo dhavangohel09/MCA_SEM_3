@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:lj/HomeScreen.dart';
+import 'package:lj/textfield_example.dart';
 
 import 'Image_example.dart';
 import 'column_row.dart';
@@ -15,6 +16,7 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
+      debugShowCheckedModeBanner: false,
       title: 'Flutter Demo',
       theme: ThemeData(
         // This is the theme of your application.
@@ -35,7 +37,7 @@ class MyApp extends StatelessWidget {
         colorScheme: ColorScheme.fromSeed(seedColor: Colors.deepPurple),
       ),
       // home: HomeScreen(),
-      home: ImageExample(),
+      home: TextfieldExample(),
     );
   }
 }
