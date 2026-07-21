@@ -18,9 +18,21 @@ class TextfieldExample extends StatelessWidget {
               controller: nameController,
               decoration: InputDecoration(
                 label: Text("Enter The Name"),
-                border: OutlineInputBorder(
+                // hintText: "Enter The Name",
+                // border: OutlineInputBorder(
+                //   borderRadius: BorderRadius.circular(20)
+                // )
+                  enabledBorder: OutlineInputBorder(
+                      borderSide: BorderSide(
+                          color: Colors.green
+                      )
+                  ),
+                  focusedBorder: OutlineInputBorder(
+                  borderSide: BorderSide(
+                    color: Colors.red
+                  )
+                ),
 
-                )
               ),
             ),
           ),
